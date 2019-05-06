@@ -1,0 +1,73 @@
+body {
+  background-color: LightGray;
+}
+
+.pic_me {
+  /* Image: 10156216654282224_8612468739213885440_n copy 5.56.45 PM.jpg; */
+  border: 10px;
+  border-style: solid;
+  border-color: black;
+  display: block;
+  margin: 25px auto;
+  width: 300px;
+  height: 300px;
+}
+
+#name {
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+  text-align:center;
+}
+
+.career_links {
+  background-color:Gray;
+  padding:10px;
+}
+
+#in_line {
+  text-indent: 25px;
+  text-align:center;
+  display:inline-block;
+}
+
+.left-side1 {
+  background-color:CadetBlue;
+  margin: 15px;
+  text-align:center;
+}
+
+.mountain1 {
+  width: 100%;
+  height: 333px;
+}
+
+.right-side1 {
+  background-color:LightSeaGreen;
+  margin: 15px;
+  margin-right: 15px
+  text-align:left;
+}
+
+.right-side2 {
+  background-color:SteelBlue;
+  margin: 15px;
+  text-align:left;
+}
+
+.left-side2 {
+  background-color:CornflowerBlue;
+  margin: 15px;
+  text-align:center;
+}
+
+.mountain2 {
+  width: 100%;
+  height: 333px;
+}
+
+.right-side3 {
+  background-color:DarkCyan;
+  margin: 5px;
+  text-align:left;
+}

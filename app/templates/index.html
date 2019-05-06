@@ -1,5 +1,99 @@
+{% import 'bootstrap/wtf.html' as wtf %}
+
 {% extends 'base.html' %}
 
 {% block app_content %}
+
+<div class="row">
+  <div class="col-md-12">
+    <img class="pic_me" src="../static/images/me.jpg" alt="Image">
+
+    <!-- <img class="pic_me" src="templates/images/me.jpg" alt="Image"> -->
+    <!-- <img class="pic_me" src="Week-4-Project/app/templates/images/me.jpg" alt="Image"> -->
+    <!-- <img class="pic_me" src="./Week-4-Project/app/templates/images/me.jpg" alt="Image"> -->
+    <!-- <img class="pic_me" src="app/templates/images/me.jpg" alt="Image"> -->
+    <!-- <img class="pic_me" src="./me.jpg" alt="Image"> -->
+    <!-- <img class="pic_me" src="me.jpg" alt="Image"> -->
+    <!-- <img class="pic_me" src="./templates/images/me.jpg" alt="Image"> -->
+    <!-- <img class="pic_me" src="./app/templates/images/me.jpg" alt="Image"> -->
+    <!-- <img class="pic_me" src="./images/me.jpg" alt="Image"> -->
+    <h2 id="name">ADAM HUDZIEC</h2>
+    <h3 id="name">Geographer, Cartographer, Licensed Land Surveyor (Maine), Aspiring Programmer at Coding Temple (Boston, MA)</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12 career_links">
+    <h4 id="in_line">Links:</h4>
+    &nbsp; &nbsp;<a href="https://codingtemple.com/coding-bootcamp-in-boston/"> Coding Temple </a>
+    &nbsp; &nbsp;<a href="https://www.w3schools.com/html/default.asp"> HTML5 Tutorial </a>
+    &nbsp; &nbsp;<a href="https://www.w3schools.com/css/default.asp"> CSS Tutorial </a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-8">
+    <div class="col-md-12 left-side1">
+      <h3>-Personal Brand Statement-</h3>
+      <h4>Key Career or Business Attributes:</h4>
+      <img class="mountain1" src="../static/images/El Capitan.jpg" alt="mountain1">
+      <p>I am a Professional Licensed Land Surveyor with cross disciplinary experience in Civil Engineering, Architecture, Environmental Science and Real Estate Law. My most valuable skill is the ability to represent data in graphical forms, predominately as maps, which were then subjected to QA/QC from clients and other professionals.</p>
+      <p>I have data processing experience analyzing information collected by robotic instruments and GPS and performing accuracy calculations using the Least Squares adjustment. My project experience includes local, state, and federal projects as well as private residential and commercial development.</p>
+    </div><!-- col 12 -->
+    <div class="col-md-12 left-side2">
+      <h3>Why Python Programming?</h3>
+      <h4>A synopsis of my career change.</h4>
+      <img class="mountain2" src="../static/images/El Capitan 2.jpg" alt="mountain2">
+      <p>I’m proud of my achievements in the land surveying profession, but after twenty years in the industry, I found myself losing interest and motivation in my work. These effects lead me to search for other career paths I could relate my spatial analysis skills too.</p>
+      <p>Python is used in a variety of mapping software, the idea of using it as a tool to further my skill set for spatial analysis seemed a viable option for a career path. I hope to be able to build off of my cartography and research skills, by adding a technology aspect, which I can use to find a fulfilling employment opportunity.</p>
+    </div><!-- col 12 -->
+  </div><!-- col 8 -->
+
+  <div class="col-md-4">
+    <div class="col-md-12 right-side1">
+      <h3>Education, Licenses & Awards:</h3>
+      <ol>
+        <li>University of Southern Maine, Bachelor of Arts - BA, Geography-Anthropology, 1996-2000</li>
+        <li>E.N. Roberts Scholarship,  Issuing Authority - NH Land Surveyors Foundation, Dec. 2003</li>
+        <li>New Hampshire Community Technical College, Associate of Science, Spatial Information Technology, 2003-2004</li>
+        <li>Licensed Professional Land Surveyor-in-Trianing, Issuing Authority - Maine Board of Licensure, Dec. 2006</li>
+        <li>Licensed Professional Land Surveyor, Issuing Authority - Maine Board of Licensure, June 2011</li>
+      </ol>
+    </div>
+    <div class="col-md-12 right-side2">
+      <h3>Interests and Fun Facts about me! In no particular order:</h3>
+      <ul>
+        <li>I drink coffee and tea.</li>
+        <li>Enjoy playing soccer.</li>
+        <li>Favorite sport to watch, hockey.</li>
+        <li>Snowboarder and Skateboarder.</li>
+        <li>Huge music fan.</li>
+        <li>Love classic movies.</li>
+        <li>Life long New Englander.</li>
+      </ul>
+    </div>
+    <div class="col-md-12 right-side3">
+      <h3>Let me know you visited!</h3>
+      <p>If you'd like to learn more about me or give feed back, let me know you visted! I will make every effort to reach out to you as soon as it's possible.</p>
+      <!-- <form action="/recorder.php">
+        First name:<br>
+        <input type="text" name="firstname">
+        <br><br>
+        Last name:<br>
+        <input type="text" name="lastname">
+        <br><br>
+        Company:<br>
+        <input type="text" name="comapany">
+        <br><br>
+        Email:<br>
+        <input type="text" name="email">
+        <br>
+        <p>Thank you for your interest in my site, I look forward to contacting you and opening up more dialogue.</p>
+        <input type="submit" value="Submit">
+      </form> -->
+      {{ wtf.quick_form(form) }}
+
+    </div><!-- end col 4-->
+  </div>
+</div><!-- end row -->
 
 {% endblock %}
